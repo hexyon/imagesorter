@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ImageSorter</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <input type="file" id="uploadButton1" multiple onchange="resizePhotos('small')" style="display: none;">
+    <button id="upload-button1" onclick="document.getElementById('uploadButton1').click()">Upload Small Images</button>
+    <p id="count1">0 small images</p>
+
+    <input type="file" id="uploadButton2" multiple onchange="resizePhotos('large')" style="display: none;">
+    <button id="upload-button2" onclick="document.getElementById('uploadButton2').click()">Upload Large Images</button>
+    <p id="count2">0 large images</p>
+
+    <button id="downloadButton1" onclick="downloadImages('small')">Download Small Images</button>
+    <button id="downloadButton2" onclick="downloadImages('large')">Download Large Images</button>
+
+    <script src="ImageSorterScript.js"></script>
+</body>
+</html>
