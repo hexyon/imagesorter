@@ -1,5 +1,5 @@
 body {
-    background: #1D1F20; /* Dark Mode background color inspired by Apple */
+    background: #0D1117; /* Slightly darker than the original */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #ffffff;
+    color: #E0E0E0; /* Brighter text color for better legibility */
     font-size: 18px;
 }
 
@@ -17,12 +17,12 @@ button {
     padding: 10px 20px;
     font-size: 20px;
     background-color: #1A2836; /* Pacific Blue inspired by Apple */
-    color: white;
+    color: #E0E0E0; /* Brighter text color for better legibility */
     cursor: pointer;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     margin-top: 10px;
 }
 
 button:hover {
-    background-color: #0A1722; /* Darker shade of Pacific Blue */
+    background-color: #008080; /* Black on hover */
 }
