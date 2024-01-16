@@ -10,7 +10,7 @@ function resizePhotos(size) {
         let img = new Image();
 
         img.onload = function() {
-            if ((size === 'small' && this.width < 1000 && this.height < 1000) ||
+            if ((size === 'small' && (this.width < 1000 || this.height < 1000)) ||
                 (size === 'large' && this.width >= 1000 && this.height >= 1000)) {
                 let images = size === 'small' ? smallImages : largeImages;
                 images.push(URL.createObjectURL(file));
