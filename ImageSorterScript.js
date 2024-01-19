@@ -23,15 +23,18 @@ function resizePhotos(size) {
 }
 
 function downloadImages(size) {
+    let uploadButton = document.getElementById(size === 'small' ? 'uploadButton1' : 'uploadButton2');
+    let files = uploadButton.files;
     let images = size === 'small' ? smallImages : largeImages;
 
     for (let i = 0; i < images.length; i++) {
         let a = document.createElement('a');
         a.href = images[i];
-        a.download = 'image' + i;
+        a.download = files[i].name; // Use the original file name
         a.style.display = 'none';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
     }
 }
+
